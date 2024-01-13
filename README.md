@@ -1,2 +1,2 @@
 # Complete-Javascript
-The cmoplete Javascript each and every concpet has covered in this repo
+The complete Javascript, each and every concept has covered in this repo.
