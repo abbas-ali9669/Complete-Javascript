@@ -1,0 +1,90 @@
+<!-- // In this topic we will learn about how we can link the js file with our htl file. -->
+<!-- // And we will see the difference between async vs defer. -->
+<!-- // Which way is better for linking js file with our html file.. -->
+
+<!-- Nut first getting into the methods first we should know about how these all the process works. -->
+
+<!-- There are four ways to link your js file with html -->
+<!-- 1. Browser locate the the html file -->
+<!-- 2. Then start parsing the html file (Parse means Read "Line by Line") -->
+<!-- 3. The process of javscript is first load the the JS file -->
+<!-- 4. Then execute the JS file -->
+
+
+<!-- 1. First Method - Connect JS file in the header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Javascipt FIle"></script>
+    <title>Method 1 (Header)</title>
+</head>
+<body>
+      <!-- This method is not usefull in case of useing -->
+      <!-- Because, When while parsing the html file, When browser reaches to javascript It will stop parsing the html file and start loading and executing the js file. And the html file is not parsed completely. Therefore the next of the element which is uses inside the js file cannot found by the broweser. And then the error occurs. -->    
+</body>
+</html>
+
+<!-- 2. Second Mehtod - Connect the js file just before the body element ends -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method 2. (Just before Body Ends)</title>
+</head>
+<body>
+    <!-- his method is good bu not in case of time saving -->
+    <!-- Everything goes normal in this method first parsing and then loading and executing the js file all normal. But, this method is ery time consuming. How ?
+    -->
+    <!-- 1. Parsing all the html -->
+    <!-- 2. And at the end the javascript file begin to load -->
+    <!-- 3. And then the file executes -->
+    <!-- Therefore, these all the process is very time consuming.. These all the processes are very time consuming and getting done one by one -->
+
+    <script src="./Javascipt FIle"></script>
+</body>
+</html>
+
+<!-- 3. Async -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Javascipt FIle" async></script>
+    <title>Async</title>
+</head>
+<body>
+    <!-- In this method we link our js file in the header with the help of async operator.  -->
+    <!-- 1. First browser parse the html -->
+    <!-- 2. When it reaches to the js file then it will load js file but not stops the parsing. But when, the js file loads completely it will stop parsing and start executing the js file. And here is the problem half of the html parsed and helf  of html did not parse. And this makes error -->
+</body>
+</html>
+
+<!-- 4. Defer -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Javascipt FIle" defer></script>
+    <title>Defer</title>
+</head>
+<body>
+    <!-- This method is very fine, good and time saving -->
+    <!-- Because in this method all the proccesses goes simultaneously  -->
+    <!-- 1. Html is parsing -->
+    <!-- 2. When the js file found -->
+    <!-- 3. They start loading js file but not stops the parsing  -->
+    <!-- 4. When the js loads it does no stops the parsing -->
+    <!-- 5. First it will completes the parsing then it will executes the js loaded file  -->
+    <!-- Form doing this alot of time saves -->
+        
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!-- In this topic we will learn about how we can build a webppage using html css and work with the javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./16. DOM/Style.css">
+    
+    <!-- Linking JS Files -->
+    <!-- <script src="./18. What is DOM.js" defer></script> -->
+    <!-- <script src="./19. getElementById Method.js" defer></script> -->
+    <!-- <script src="./20. Querry Selector.js" defer></script> -->
+    <!-- <script src="./21. textContent and innerText.js" defer></script> -->
+    <!-- <script src="./22. Change the Style of Element.js" defer></script> -->
+    <!-- <script src="./23. Get and Set Attribute.js" defer></script> -->
+    <!-- <script src="./24. getElementsByClassName and querySelectorAll Methods.js" defer></script> -->
+    <!-- <script src="./25. Element Iteration.js" defer></script> -->
+    <!-- <script src="./26. Inner HTML.js" defer></script> -->
+    <!-- <script src="./29. Classlist Add, Remove, Contain and toggle.js" defer></script> -->
+    <!-- <script src="./30. Add Element Using innerHTML.js" defer></script> -->
+    <!-- <script src="./31. Add Element Using new Method.js" defer></script> -->
+    <!-- <script src="./32. Another method to add HTML Element.js" defer></script> 
+    -->
+    <!-- <script src="./33. Clone Nodes.js" defer></script> -->
+    <!-- <script src="./34. Some More Methods of Element.js" defer></script>  -->
+    <!-- <script src="./35. Static List vs Live List.js" defer></script> -->
+    <!-- <script src="./36. Get Dimensions of Element.js" defer  ></script> -->
+    <!-- <script src="./37. Intro to Events.js" defer></script> -->
+    <!-- <script src="./38. this Keyword inside EventListener.js" defer></script> -->
+    <script src="./44. Keypress and Mouseover Event.js" defer></script>
+    <title>My Website</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <h2>My Website</h2>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#todo">Todo</a></li>
+                <li class="nav-item"><a href="#Signup">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <div class="headline">
+            <h2 id="main-heading">Manage Your Tasks <span style="display: none;">Hello</span></h2>
+            <button class="btn btn-headline">Learn More</button>
+        </div>
+    </header>
+
+    <section class="section-todo">
+        <div class="container">
+            <h2>Your Plan For Today</h2>
+            <form class="todo-form">
+                <input type="text" name="" id="" placeholder="Add Todo">
+                <input type="submit" value="Add Todo" class="btn btn-todo">
+            </form>
+            <ul class="todo-list">
+                <li>item 1</li> 
+                <!-- <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li> -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-signup container" style="border-radius: 20px;">
+        <div>
+            <h2>Sign Up</h2>
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="username">UserName</label>
+                    <input type="text" name="username" id="username">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" name="confirmpassword" id="confirmpassword">
+
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone">
+
+                    <label for="eamil">Email</label>
+                    <input type="email" name="email" id="email">
+
+                        <label for="about">About Yourself</label>
+                    <textarea name="about" id="about" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn signup-btn" style="font-size: 18px; border-radius: 10px;">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
